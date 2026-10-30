@@ -1,7 +1,7 @@
 # AFTERMATH
 
 Counterfactual recovery planning for interconnected services
-HUMAIN Future AI Builders challenge 1 : Agentic Recovery of a Failing System
+
 
 ## Overview
 
