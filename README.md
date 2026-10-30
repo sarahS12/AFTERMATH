@@ -75,11 +75,7 @@ API keys are entered through a password input and are not part of the project fi
 | `llm_only` | Pretrained model investigates and proposes an action | Yes |
 | `llm_guarded` | Same investigator, with counterfactual safety gate | Yes |
 
-## Experiment: imperfect predictions
 
-The planner uses nominal transitions. The execution environment applies seeded hidden coefficients to restart surges, queue-clearing costs, database capacity gains, and background disturbance. As a result, observed loss can differ from the predicted loss. The controller records this error and updates a rule-based risk penalty for subsequent decisions.
-
-The included `results/uncertainty_benchmark.csv` contains **50 synthetic episodes**: five incident scenarios, five seeds, and two non-LLM strategies (`reactive` and `counterfactual`) at uncertainty intensity 1.0 with up to six actions. The offline comparison does **not** evaluate the language model.
 
 | Metric | Reactive | Counterfactual |
 | --- | ---: | ---: |
@@ -93,7 +89,4 @@ The included `results/uncertainty_benchmark.csv` contains **50 synthetic episode
 
 
 
-## Research help
 
-- [ITBench: Evaluating AI Agents across Diverse Real-World IT Automation Tasks (ICML 2025)](https://proceedings.mlr.press/v267/jha25a.html)
-- [Qwen function-calling documentation](https://github.com/QwenLM/Qwen3/blob/main/docs/source/framework/function_call.md)
