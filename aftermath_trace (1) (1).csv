@@ -1,0 +1,3 @@
+step,strategy,AI proposed,executed,gate,loss before,predicted loss,actual loss,prediction error
+1,llm_guarded,throttle_retries,clear_queue,override,99.0,64.84,67.67,2.83
+2,llm_guarded,throttle_retries,throttle_retries,approved,67.67,32.2,32.2,0.0
